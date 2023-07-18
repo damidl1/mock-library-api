@@ -22,11 +22,11 @@ function render() {
 
         cardDiv.appendChild(createElementWithString('strong', book.title));
 
-        const authorSpan = cardDiv.appendChild(createElementWithString('span', book.author));
+        // const authorSpan = cardDiv.appendChild(createElementWithString('span', book.author));
        
-        const dopSpan = cardDiv.appendChild(createElementWithString('span', book.dop.toISOString()));
+        // const dopSpan = cardDiv.appendChild(createElementWithString('span', book.dop.toISOString()));
 
-        const genreSpan = cardDiv.appendChild(createElementWithString('span', book.genre));
+        // const genreSpan = cardDiv.appendChild(createElementWithString('span', book.genre));
         
         const coverCard = document.createElement('img');
         coverCard.src = book.cover;
@@ -39,11 +39,21 @@ function render() {
                 render();
             });
         });
+        deleteButton.classList.add('delete-btn');
         cardDiv.appendChild(deleteButton);
 
         const detailButton = createElementWithString('button', 'Dettagli');
         detailButton.addEventListener('click', () => saveAndNavigate(book));
         cardDiv.appendChild(detailButton);
+
+        detailButton.classList.add('detail-btn');
+
+        const buttonWrapper = document.createElement("div");
+        buttonWrapper.classList.add("button-wrapper");
+        buttonWrapper.appendChild(detailButton);
+        buttonWrapper.appendChild(deleteButton);
+
+        cardDiv.appendChild(buttonWrapper);
         
         bookContainer.appendChild(cardDiv);
     }

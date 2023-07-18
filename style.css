@@ -1,19 +1,195 @@
-.book-card{
+body {
+   
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://media.istockphoto.com/id/639392022/vector/bookshelves-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=1DNOwFJabnlqHzShnSHfWOsNBUTtIaOgFBcpGQO_-oQ=');
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.book-card {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #564E58;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    background-color: #cfdbd5d7;
+
+
+}
+
+#main-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+
+}
+
+#book-container {
+
     display: flex;
     flex-direction: column;
     border: 3px solid black;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 500px;
+}
+
+.book-card img {
+    
+    width: 150px;
+    height: auto;
+}
+
+.index-header {
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    background-color: #15616dce;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    position: sticky;
+    top: 0;
+}
+
+
+.detail-header{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    background-color: #15616dce;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    position: sticky;
+    top: 0;
+}
+
+
+.orderBtn-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
     
 }
 
-#main-container{
+.order-title{
+
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #EAB464;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    transition: background-color 0.3s, height 0.3s;
+}
+
+.order-date{
+
+    
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #EAB464;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    transition: background-color 0.3s, height 0.3s;
+
+}
+
+
+
+
+.order-title:hover,
+.order-date:hover {
+    background-color: #6c756d;
+}
+
+
+.order-title:active,
+.order-date:active {
+
+     background-color: #5e665d;
+     height: 45px;
+}
+
+
+
+.detail-btn {
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #93C0A4;
+    border-radius: 8px;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+.delete-btn {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #93C0A4;
+    border-radius: 8px;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.detail-btn, .delete-btn{
+    transition: background-color 0.3s, height 0.3s;
+}
+
+
+.detail-btn:hover,
+.delete-btn:hover {
+    background-color: #6c756d;
+}
+
+
+.detail-btn:active,
+.delete-btn:active {
+
+     background-color: #5e665d;
+     height: 45px;
+}
+
+
+.main-details{
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 1rem;
-    flex-wrap: wrap;
-    
-    
 }
