@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library</title>
+    <title>Books Library</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Books Library</h1>
+    </header>
+    <main>
+        <div class="orderBtn-container">
+
+            <button onclick="orderByTitle()">Ordina per titolo</button>
+            <button onclick="orderByDop()">Ordina per data di pubblicazione</button>
+
+        </div>
+        <div id="main-container">
+
+        </div>
+    </main>
 </body>
 
 <script src="./models/book.js"></script>
@@ -16,3 +29,4 @@
 <script src="./services/db-services.js"></script>
 <script src="./main.js"></script>
 </html>
+
