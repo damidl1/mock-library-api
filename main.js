@@ -19,6 +19,11 @@ function render() {
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('book-card');
 
+        const coverImage = document.createElement('img');
+        coverImage.src = book.cover;
+        coverImage.alt = book.title;
+        cardDiv.appendChild(coverImage);
+
 
         cardDiv.appendChild(createElementWithString('strong', book.title));
 
@@ -28,8 +33,8 @@ function render() {
 
         // const genreSpan = cardDiv.appendChild(createElementWithString('span', book.genre));
         
-        const coverCard = document.createElement('img');
-        coverCard.src = book.cover;
+        // const coverCard = document.createElement('img');
+        // coverCard.src = book.cover;
 
 
         const deleteButton = createElementWithString('button', 'Cancella');

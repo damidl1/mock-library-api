@@ -20,6 +20,10 @@ function render(book) {
     bookContainer.appendChild(createElementWithString('span', book.author));
     bookContainer.appendChild(createElementWithString('span', book.dop));
     bookContainer.appendChild(createElementWithString('span', book.genre));
-    bookContainer.appendChild(createElementWithString('span', book.cover));
+    bookContainer.appendChild(createElementWithString('img', book.cover));
 
+    
+
+
+   
 }
